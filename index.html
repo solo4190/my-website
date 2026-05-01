@@ -1,76 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Cloud Site</title>
-  <style>
-    body {
-      background-color: #0f172a;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solomon | Cloud Engineer Portfolio</title>
 
-    h1 {
-      color: #38bdf8;
-      font-size: 40px;
-    }
-
-    p {
-      font-size: 18px;
-      color: #cbd5f5;
-    }
-
-    .box {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 10px;
-      display: inline-block;
-    }
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0;
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-li {
-  margin: 5px 0;
-  text-align: center;
+body{
+  font-family:Arial, sans-serif;
+  background:#0f172a;
+  color:white;
+  padding:20px;
 }
-  </style>
+
+.container{
+  max-width:900px;
+  margin:auto;
+}
+
+.card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:18px;
+  margin-bottom:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+h1{
+  font-size:38px;
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+h2{
+  color:#38bdf8;
+  margin-bottom:15px;
+  font-size:24px;
+}
+
+p{
+  color:#dbeafe;
+  line-height:1.7;
+  margin-bottom:10px;
+}
+
+ul{
+  list-style:none;
+  padding:0;
+}
+
+li{
+  margin:10px 0;
+  color:#e2e8f0;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.box{
+  background:#0f172a;
+  padding:15px;
+  border-radius:12px;
+}
+
+a{
+  text-decoration:none;
+}
+
+.btn{
+  display:inline-block;
+  background:#38bdf8;
+  color:#0f172a;
+  padding:12px 18px;
+  border-radius:10px;
+  font-weight:bold;
+  margin:8px 5px 0 0;
+}
+
+.btn:hover{
+  opacity:0.9;
+}
+
+.small{
+  font-size:14px;
+  color:#94a3b8;
+}
+
+@media(max-width:700px){
+.grid{
+grid-template-columns:1fr;
+}
+h1{
+font-size:30px;
+}
+}
+</style>
 </head>
- <body>
-  <div class="box">
-    <h1>🚀 Solomon's Cloud Journey</h1>
-    
-    <p>Hi, I'm Solomon 👋</p>
-    <p>Aspiring Cloud Engineer from Nigeria 🇳🇬</p>
-    <p>Developer + Cloud Engineer is the best</p>
 
-    <p>Skills I'm learning:</p>
-    <ul>
-      <li>✅ Linux (Termux)</li>
-      <li>✅ Git & GitHub</li>
-      <li>✅ Networking Basics</li>
-      <li>🔄 Cloud Engineering (In Progress)</li>
-    </ul>
-    
-    <p>Cloud Engineering Skills Update</p>
-    <ul>
-       <ol>Hosting</ol>
-       <ol>GitHub deployment</ol>
-       <ol>Local Server</ol>
-       <ol>Ports</ol>
-       <ol>Multiple Service</ol>
-       <ol>Networking mindset</ol>
-    </ul>
-        
-      <p>📂 My Projects:</p>
+<body>
+<div class="container">
+
+<!-- HERO -->
+<div class="card">
+<h1>🚀 Solomon</h1>
+<p><strong>Aspiring Cloud Engineer & Developer from Nigeria 🇳🇬</strong></p>
+<p>I build practical Linux, networking and cloud projects using mobile-first tools and hands-on learning.</p>
+
+<a class="btn" href="https://github.com/solo4190" target="_blank">GitHub</a>
+<a class="btn" href="#">Contact Me</a>
+</div>
+
+<!-- SKILLS -->
+<div class="card">
+<h2>⚡ Technical Skills</h2>
+
+<div class="grid">
+<div class="box">✅ Linux (Termux / Bash)</div>
+<div class="box">✅ Git & GitHub</div>
+<div class="box">✅ Networking (Ports / DNS)</div>
+<div class="box">✅ HTML / CSS</div>
+<div class="box">✅ Node.js Basics</div>
+<div class="box">🔄 Cloud Engineering</div>
+</div>
+</div>
+
+<!-- PROJECTS -->
+<div class="card">
+<h2>📂 Projects</h2>
+
 <ul>
-  <li>🌐 Cloud Website (GitHub Pages)</li>
-  <li>⚙️ Local Server (Node.js)</li>
+<li>🌐 Public Portfolio Website (GitHub Pages)</li>
+<li>⚙️ Local Multi-Port Server Setup</li>
+<li>🔐 GitHub SSH Authentication</li>
+<li>☁️ Beginner Cloud Lab Projects</li>
 </ul>
-   
- <p>📌 This website is hosted on GitHub Pages</p>
-  </div>
+</div>
+
+<!-- JOURNEY -->
+<div class="card">
+<h2>📈 Current Focus</h2>
+
+<p>Learning cloud engineering, Linux administration, networking, server deployment and real-world infrastructure skills.</p>
+</div>
+
+<!-- CONTACT -->
+<div class="card">
+<h2>📬 Contact</h2>
+
+<p>GitHub: <a href="https://github.com/solo4190" target="_blank">github.com/solo4190</a></p>
+<p>Email: solomon419oz.com</p>
+
+<p class="small">Built by Solomon using HTML + CSS + GitHub Pages</p>
+</div>
+
+</div>
 </body>
+</html>
